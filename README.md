@@ -1,6 +1,8 @@
 # metalmenders
-testing app
 
+Full-stack TypeScript sandbox for rapid product prototyping with React, Express, and PostgreSQL.
+
+**Tech spec:** [docs/TECH_SPEC.md](docs/TECH_SPEC.md)
 
 ## Problem
 Rapid prototyping projects need a structured full-stack baseline for validating product ideas quickly.
@@ -18,11 +20,7 @@ flowchart LR
 ```
 
 ## Tech Stack
-- TypeScript
-- Express
-- React
-- Drizzle ORM
-- Vite/tsx tooling
+- TypeScript, Express, React, Drizzle ORM, Vite/tsx tooling
 
 ## Setup Instructions
 ```bash
@@ -31,23 +29,18 @@ npm run dev
 ```
 
 ## Testing
-- npm run check
-- npm run build
-
-## ANZSCO 261312 Competency Evidence
-- Full-stack application prototyping.
-- Type-safe backend/frontend integration.
-- Database schema and build pipeline management.
-
-## Commit Convention
-Use Conventional Commits for presentation clarity:
-- `feat(scope): add new user-facing capability`
-- `fix(scope): resolve functional defect`
-- `test(scope): add or improve automated tests`
-- `docs(readme): improve project documentation`
+- `npm run check`
+- `npm run build`
 
 ## Evidence Map
 - `server/`
 - `client/`
 - `package.json`
-- `drizzle configuration`
+- Drizzle configuration
+- Tech spec: `docs/TECH_SPEC.md`
+
+---
+
+**Maintained by:** [Dark Heart Labs](https://darkheartlabs.technology)  
+**Author:** Jennifer ([@jv-darkheartlabs](https://github.com/jv-darkheartlabs))  
+**Site:** https://darkheartlabs.technology
