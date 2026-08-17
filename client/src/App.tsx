@@ -1,4 +1,4 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, Router } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 
-function Router() {
+function AppRoutes() {
   return (
     <Switch>
       <Route path="/" component={Home} />
@@ -22,7 +22,9 @@ function App() {
       <ThemeProvider>
         <TooltipProvider>
           <Toaster />
-          <Router />
+          <Router base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+            <AppRoutes />
+          </Router>
         </TooltipProvider>
       </ThemeProvider>
     </QueryClientProvider>
